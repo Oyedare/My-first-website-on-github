@@ -7,6 +7,9 @@
 body{
     box-sizing: border-box;
     padding: 30px;
+    font-family: "lato" , sans-serif;
+    line-height: 1.7;
+    color: #777;
 }
 .logo{
     height: 35px;
@@ -23,22 +26,44 @@ url(img/hero-small.jpg);
 background-size: cover;
 background-position: top;
 position: relative;
+clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
 }
 .text-box{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
-    background-color: red;
     margin-bottom: 60px;
 }
 .primary-main{
     display: block;
     font-size: 60px;
     font-weight: 400;
+    letter-spacing: 35px;
+}
+.primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.5px;
+}
+.btn,
+.btn:link,
+.btn:visited{
+text-transform: uppercase;
+text-decoration: none;
+padding: 15px 40px;
+display:inline-block ;
+border-radius: 100px;
+font-size: 16px;
+
+}
+.btn-white{
+    background-color: white;
+    color: #777;
 }
